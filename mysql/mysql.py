@@ -25,7 +25,6 @@ from progress_bar.progress_bar import ProgressBar
 import other
 
 
-
 class BaseMySQLDB:
     """
     Базовый класс для работы БД в частности MySQL
@@ -351,7 +350,7 @@ class LogDB(BaseMySQLDB):
                     dd[a['crc']].append(a)
                 return dd
             except Exception as inst:
-                CLogger.exception(inst, f"Problem in func: {who_am_i()!r}.\n Data:{a}")
+                CLogger.exception(inst, f"Problem in func: {other.who_am_i()!r}.\n Data:{a}")
 
         def process_log_data(records):
             """
@@ -370,7 +369,7 @@ class LogDB(BaseMySQLDB):
                     result.append(d)
                 return result
             except Exception as inst_parse_log_data:
-                raise DbCriticalExceptionSLL(message=f"Error in func {who_am_i()!r}. While parse log data {r}",
+                raise DbCriticalExceptionSLL(message=f"Error in func {other.who_am_i()!r}. While parse log data {r}",
                                              inst=inst_parse_log_data)
 
         order_by = f"ORDER BY {order_by}" if order_by else ""

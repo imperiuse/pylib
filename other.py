@@ -5,6 +5,7 @@ import inspect
 def who_am_i(n=1, m=3):
     return inspect.stack()[n][m]
 
+
 # Модуль поддержки json с комментариями
 # Загрузка из файла
 # 1. Игнорируем строки:
