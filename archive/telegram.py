@@ -3,7 +3,7 @@ import os
 
 from .. import other
 from ..logger import CLogger
-from ..exeption import BaseExceptionSLL
+from pylib.logger.exeption import BaseExceptionSLL
 
 """
 ########################################################################################################################

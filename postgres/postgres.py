@@ -1,17 +1,9 @@
 import psycopg2
 import time
 
-from ..exeption import DbCriticalExceptionSLL
-from ..exeption import DbSqlQueryExceptionSLL
-
-from ..decorators import unknown_exception_catcher
-from ..decorators import sll_exception_catcher
-from ..decorators import timer
-
-from ..logger import Color
-from ..logger import Logger
-from ..logger import CLogger
-
+from ..logger.logger import DbCriticalExceptionSLL, DbSqlQueryExceptionSLL, unknown_exception_catcher,\
+    sll_exception_catcher, timer
+from ..logger import Color, Logger, CLogger
 from .. import other
 
 
