@@ -1,9 +1,9 @@
 import os
 
 
-import other
-from logger import CLogger
-from exeption import BaseExceptionSLL
+from .. import other
+from ..logger import CLogger
+from ..exeption import BaseExceptionSLL
 
 """
 ########################################################################################################################

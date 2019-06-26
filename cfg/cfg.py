@@ -1,6 +1,7 @@
 import xml.etree.cElementTree as eTree
 
-from logger import CLogger
+from ..logger import CLogger
+
 
 class CFG:
     """

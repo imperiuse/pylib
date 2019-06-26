@@ -1,6 +1,6 @@
 import time
 
-from logger import CLogger
+from ..logger import CLogger
 
 
 class Profiler:

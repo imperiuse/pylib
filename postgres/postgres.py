@@ -1,18 +1,18 @@
 import psycopg2
 import time
 
-from exeption import DbCriticalExceptionSLL
-from exeption import DbSqlQueryExceptionSLL
+from ..exeption import DbCriticalExceptionSLL
+from ..exeption import DbSqlQueryExceptionSLL
 
-from decorators import unknown_exception_catcher
-from decorators import sll_exception_catcher
-from decorators import timer
+from ..decorators import unknown_exception_catcher
+from ..decorators import sll_exception_catcher
+from ..decorators import timer
 
-from logger import Color
-from logger import Logger
-from logger import CLogger
+from ..logger import Color
+from ..logger import Logger
+from ..logger import CLogger
 
-import other
+from .. import other
 
 
 class BasePostgresDB:

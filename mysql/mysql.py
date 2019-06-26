@@ -5,24 +5,24 @@ import time
 import pymysql
 
 
-from exeption import DbCriticalExceptionSLL
-from exeption import DbSqlQueryExceptionSLL
-from exeption import DemultiplexorCriticalExceptionSLL
-from exeption import DemultiplexorExceptionSLL
+from ..exeption import DbCriticalExceptionSLL
+from ..exeption import DbSqlQueryExceptionSLL
+from ..exeption import DemultiplexorCriticalExceptionSLL
+from ..exeption import DemultiplexorExceptionSLL
 
-from decorators import unknown_exception_catcher
-from decorators import sll_exception_catcher
-from decorators import timer
-from decorators import deprecated
+from ..decorators import unknown_exception_catcher
+from ..decorators import sll_exception_catcher
+from ..decorators import timer
+from ..decorators import deprecated
 
-from logger import Color
-from logger import CLogger
+from ..logger import Color
+from ..logger import CLogger
 
-from mock.mock import MockingHelper
+from ..mock.mock import MockingHelper
 
-from progress_bar.progress_bar import ProgressBar
+from ..progress_bar.progress_bar import ProgressBar
 
-import other
+from .. import other
 
 
 class BaseMySQLDB:

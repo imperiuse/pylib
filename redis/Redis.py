@@ -2,7 +2,7 @@ import redis
 import time
 
 
-from logger import CLogger, Color
+from ..logger import CLogger, Color
 
 
 class Redis:

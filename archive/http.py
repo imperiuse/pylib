@@ -4,7 +4,7 @@ import random
 from urllib.error import URLError
 from urllib.request import Request, urlopen
 
-from logger import CLogger
+from ..logger import CLogger
 
 """
 ########################################################################################################################

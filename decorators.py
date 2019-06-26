@@ -2,17 +2,16 @@ import functools
 import time
 
 
-from logger import CLogger
-from logger.color import Color
+from .logger import CLogger
+from .logger.color import Color
 
-from exeption import BaseExceptionSLL
-from exeption import LockerCriticalExceptionSLL
-from exeption import ScriptCriticalExceptionSLL
-from exeption import DbCriticalExceptionSLL
-from exeption import DemultiplexorCriticalExceptionSLL
-from exeption import DemultiplexorExceptionSLL
-from exeption import DbSqlQueryExceptionSLL
-from exeption import EmailSenderExceptionSLL
+from .exeption import BaseExceptionSLL
+from .exeption import LockerCriticalExceptionSLL
+from .exeption import ScriptCriticalExceptionSLL
+from .exeption import DbCriticalExceptionSLL
+from .exeption import DemultiplexorCriticalExceptionSLL
+from .exeption import DemultiplexorExceptionSLL
+from .exeption import DbSqlQueryExceptionSLL
 
 
 # Удобные функции декораторы для отладки

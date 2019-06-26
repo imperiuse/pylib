@@ -1,11 +1,11 @@
 import datetime
 
-from logger import CLogger, Color
-from locker.locker import Locker
-from profiler.profiler import Profiler
+from ..logger import CLogger, Color
+from ..locker.locker import Locker
+from ..profiler.profiler import Profiler
 
-from exeption import ScriptCriticalExceptionSLL
-from decorators import sll_exception_catcher
+from ..exeption import ScriptCriticalExceptionSLL
+from ..decorators import sll_exception_catcher
 
 
 class Script:

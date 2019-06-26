@@ -2,9 +2,9 @@ import smtplib
 import ssl
 from email.mime.text import MIMEText
 
-from decorators import sll_exception_catcher
-from exeption import EmailSendExceptionSLL
-from exeption import SimpleEmailSendExceptionSLL
+from ..decorators import sll_exception_catcher
+from ..exeption import EmailSendExceptionSLL
+from ..exeption import SimpleEmailSendExceptionSLL
 from .color import Color
 
 
