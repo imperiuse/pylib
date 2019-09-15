@@ -28,3 +28,18 @@ def load_comment_json(file, ignore_match=r'^[ ,    \n]*//+', ignore_search=r'---
                          not (re.match(ignore_match, line) or re.search(ignore_search, line)))
     return json.loads(clean_json)
 
+
+# Decorator of Decorators
+def optional_arg_decorator(fn):
+    def wrapped_decorator(*args):
+        if len(args) == 1 and callable(args[0]):
+            return fn(args[0])
+
+        else:
+            def real_decorator(decoratee):
+                return fn(decoratee, *args)
+
+            return real_decorator
+
+    return wrapped_decorator
+
