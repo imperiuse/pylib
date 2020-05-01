@@ -9,6 +9,8 @@ import time
 
 from .color import Color
 
+LOGGER_NAME = "__pylib__"
+
 COLOR = Color()
 
 
@@ -28,7 +30,7 @@ class LessThanFilter(logging.Filter):
 
 # Основная идея. Все что не ошибка фигачим в STDOUT, все ошибки в STDERR
 # Get the root logger.py
-Logger = logging.getLogger("__pylib__")
+Logger = logging.getLogger(LOGGER_NAME)
 
 # Have to set the root logger.py level, it defaults to logging.WARNING
 Logger.setLevel(logging.NOTSET)
